@@ -1,0 +1,299 @@
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея нейро-картин</title>
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href=".style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header__overlay">
+            <div class="header__link">
+                <a href="#gallery" class="header__anchor">Галерея</a>
+            </div>
+            <h1 class="header__title">Выставка нейро-картин</h1>
+        </div>
+    </div>
+    <div class="content">
+        <ul class="gallery" id="gallery">
+            <li class="gallery__item">
+                <p class="image__title">Самуправляемый паровоз, 330 г. до н.э.</p>
+                <img src="./images/1.png" class="image">
+                <div class="image__buttons">
+                    <button class="imagebutton imagelike"></button>
+                    <button class="imagebutton imagechoosen"></button>
+                </div>
+            </li>
+            <li class="gallery__item">
+                <p class="image__title">Девушка с цветами</p>
+
+                <img src="./images/2.png" class="image">
+                <div class="image__buttons">
+                    <button class="imagebutton imagelike"></button>
+                    <button class="imagebutton imagechoosen"></button>
+                </div>
+            </li>
+            <li class="gallery__item">
+                <p class="image__title">Повелитель времени</p>
+
+                <img src="./images/3.png" class="image">
+                <div class="image__buttons">
+                    <button class="imagebutton imagelike"></button>
+                    <button class="imagebutton imagechoosen"></button>
+                </div>
+            </li>
+            <li class="gallery__item">
+                <p class="image__title">Отец повелителя времени</p>
+
+                <img src="./images/4.png" class="image">
+                <div class="image__buttons">
+                    <button class="imagebutton imagelike"></button>
+                    <button class="imagebutton imagechoosen"></button>
+                </div>
+            </li>
+            <li class="gallery__item">
+                <p class="image__title">Настя, Алхимик, 96 лет</p>
+
+                <img src="./images/5.png" class="image">
+                <div class="image__buttons">
+                    <button class="imagebutton imagelike"></button>
+                    <button class="imagebutton imagechoosen"></button>
+                </div>
+            </li>
+            <li class="gallery__item">
+                <p class="image__title">Циклопы и стены</p>
+
+                <img src="./images/6.png" class="image">
+                <div class="image__buttons">
+                    <button class="imagebutton imagelike"></button>
+                    <button class="imagebutton imagechoosen"></button>
+                </div>
+            </li>
+            <li class="gallery__item">
+                <p class="image__title">Малтай</p>
+
+                <img src="./images/7.png" class="image">
+                <div class="image__buttons">
+                    <button class="imagebutton imagelike"></button>
+                    <button class="imagebutton imagechoosen"></button>
+                </div>
+            </li>
+            <li class="gallery__item">
+                <p class="image__title">Великая циклопская революция</p>
+                <img src="./images/8.png" class="image">
+                <div class="image__buttons">
+                    <button class="imagebutton imagelike"></button>
+                    <button class="imagebutton imagechoosen"></button>
+                </div>
+            </li>
+            <li class="gallery__item">
+                <p class="image__title">Просто женщина</p>
+                <img src="./images/9.png" class="image">
+                <div class="image__buttons">
+                    <button class="imagebutton imagelike"></button>
+                    <button class="imagebutton imagechoosen"></button>
+                </div>
+            </li>
+            <li class="gallery__item">
+                <p class="image__title">Первый испытатель джетпака</p>
+                <img src="./images/10.png" class="image">
+                <div class="image__buttons">
+                    <button class="imagebutton imagelike"></button>
+                    <button class="imagebutton imagechoosen"></button>
+                </div>
+            </li>
+            <li class="gallery__item">
+                <p class="image__title">Леонард</p>
+                <img src="./images/11.png" class="image">
+                <div class="image__buttons">
+                    <button class="imagebutton imagelike"></button>
+                    <button class="imagebutton imagechoosen"></button>
+                </div>
+            </li>
+            <li class="gallery__item">
+                <p class="image__title">Средневековье</p>
+                <img src="./images/12.png" class="image">
+                <div class="image__buttons">
+                    <button class="imagebutton imagelike"></button>
+                    <button class="imagebutton imagechoosen"></button>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="footer">
+        <div class="footer__overlay">
+            <p class="footer__text">Сделано руками(твое имя)</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'StratosSkyeng', sans-serif;
+    background-color: #0F0804;
+}
+
+.header {
+    height: 100vh;
+    background-image: url(images/13.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__overlay {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.50) 80.49%, #0F0804 100%);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__title {
+    margin: auto;
+    font-size: 96px;
+    text-align: center;
+    color: white;
+    max-width: 658px;
+    font-weight: 400;
+}
+
+.header__link {
+    height: 90px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.17);
+    backdrop-filter: blur(11.5px);
+}
+
+.header__link:hover {
+    opacity: 0.8;
+}
+
+.header__anchor {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery {
+    list-style-type: none;
+    margin: 173px auto;
+
+    display: flex;
+    max-width: 1060px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.gallery__item {
+    max-width: 330px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image__title {
+    max-width: 260px;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+.gallery__item::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.gallery__item:hover::after,
+.galleryitem:hover .imagetitle {
+    display: block;
+}
+
+
+.image {
+    width: 100%;
+}
+
+.image__buttons {
+    position: absolute;
+    right: 27px;
+    bottom: 24px;
+    display: flex;
+    gap: 21px;
+    z-index: 5;
+}
+
+.image__button {
+    border: none;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 32px;
+    cursor: pointer;
+}
+
+.image__like {
+    width: 39px;
+    background-image: url(./images/Like.svg);
+}
+
+.image__like:hover {
+    background-image: url(./images/Like_active.svg);
+}
+
+.image__choosen {
+    width: 30px;
+    background-image: url(./images/Choosen.svg);
+}
+
+.image__choosen:hover {
+    background-image: url(./images/Choosen_active.svg);
+}
+
+
+.footer {
+    height: 100vh;
+    background-image: url(./images/7.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer__overlay {
+    display: flex;
+    height: 100%;
+    background: linear-gradient(180deg, #0F0804 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+.footer__text {
+    margin: auto;
+    font-size: 40px;
+    color: white;
+}
